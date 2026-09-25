@@ -1,14 +1,18 @@
 {
-  "name": "v5",
+  "name": "sh-p",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf:build": "opennextjs-cloudflare build",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf:dry-run": "opennextjs-cloudflare build && wrangler deploy --dry-run"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.15.1",
     "@paper-design/shaders-react": "^0.0.46",
     "@radix-ui/react-slot": "^1.2.3",
     "@react-email/components": "^0.3.2",
@@ -40,6 +44,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.4.4",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.140.0"
   }
 }
