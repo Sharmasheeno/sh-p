@@ -3,30 +3,30 @@ import { resumeKeywords } from "@/constant";
 import { generateResumeStructuredData } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Resume - Aarab Nishchal",
+  title: "Resume - Sharmake Hassan Said",
   description:
-    "View and download Aarab Nishchal's professional resume. Student developer with expertise in React, Next.js, and full-stack development.",
+    "Professional resume of Sharmake Hassan Said, a Full Stack Developer specializing in web applications, backend engineering, computer vision, and machine learning.",
   keywords: resumeKeywords,
   openGraph: {
-    title: "Resume - Aarab Nishchal",
+    title: "Resume - Sharmake Hassan Said",
     description:
-      "View and download Aarab Nishchal's professional resume featuring his experience and skills as a student developer.",
-    url: "https://aarab.vercel.app/resume",
-    siteName: "Aarab Nishchal",
+      "View the professional experience, education, and technical skills of Sharmake Hassan Said.",
+    url: "https://sh-p-kappa.vercel.app/resume",
+    siteName: "Sharmake Hassan Said",
     images: [
       {
         url: "/images/thumbnail.png",
         width: 1200,
         height: 630,
-        alt: "Aarab Nishchal Resume",
+        alt: "Sharmake Hassan Said Resume",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Resume - Aarab Nishchal",
+    title: "Resume - Sharmake Hassan Said",
     description:
-      "View Aarab Nishchal's professional resume and experience as a student developer.",
+      "View Sharmake Hassan Said's professional resume and experience as a Full Stack Developer.",
     images: ["/images/thumbnail.png"],
   },
 };
@@ -40,13 +40,6 @@ export default function ResumeLayout({
 
   return (
     <>
-      <link
-        rel="preload"
-        href="/docs/Aarab_Nishchal_Resume.pdf"
-        as="fetch"
-        type="application/pdf"
-        crossOrigin="anonymous"
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

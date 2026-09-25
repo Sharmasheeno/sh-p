@@ -32,7 +32,7 @@ export function generatePersonStructuredData() {
       `https://linkedin.com/in/${selfData.socials_username.linkedin}`,
       `https://${selfData.socials_username.portfolio}`,
     ],
-    url: "https://sharmatheanalyst.vercel.app",
+    url: "https://sh-p-kappa.vercel.app",
     description: selfData.bio,
     knowsAbout: skills,
   };
@@ -43,7 +43,7 @@ export function generateWebsiteStructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Sharmake Hassan Said - Portfolio",
-    url: "https://sharmatheanalyst.vercel.app",
+    url: "https://sh-p-kappa.vercel.app",
     description:
       "Sharmake Hassan Said's portfolio featuring projects in React, Node.js, AI, Machine Learning, and Data Analytics",
     author: {
@@ -68,8 +68,8 @@ export function generateOrganizationStructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: selfData.name,
-    url: "https://sharmatheanalyst.vercel.app",
-    logo: "https://sharmatheanalyst.vercel.app/images/logo.png",
+    url: "https://sh-p-kappa.vercel.app",
+    logo: "https://sh-p-kappa.vercel.app/images/logo.png",
     description: selfData.bio,
     founder: {
       "@type": "Person",
@@ -89,8 +89,8 @@ export function generateResumeStructuredData() {
     "@type": "DigitalDocument",
     name: "Sharmake Hassan Said Resume",
     description:
-      "Professional resume of Sharmake Hassan Said - Full Stack Developer & Data Analyst specializing in Web Development, AI, and Machine Learning",
-    url: "https://sharmatheanalyst.vercel.app/resume",
+      "Professional resume of Sharmake Hassan Said - Full Stack Developer specializing in web development, backend engineering, computer vision, and machine learning",
+    url: "https://sh-p-kappa.vercel.app/resume",
     author: {
       "@type": "Person",
       name: selfData.name,
@@ -112,9 +112,9 @@ export function generateResumeStructuredData() {
       ],
     },
     dateModified: new Date().toISOString(),
-    fileFormat: "application/pdf",
-    contentUrl: "https://sharmatheanalyst.vercel.app/docs/Sharmake_Hassan_Resume.pdf",
-    downloadUrl: "https://sharmatheanalyst.vercel.app/docs/Sharmake_Hassan_Resume.pdf",
+    fileFormat: "text/html",
+    contentUrl: "https://sh-p-kappa.vercel.app/resume",
+    downloadUrl: "https://sh-p-kappa.vercel.app/resume",
     keywords: [
       "Full Stack Developer",
       "Data Analyst",

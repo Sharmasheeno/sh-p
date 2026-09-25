@@ -5,7 +5,7 @@
   <!-- Logo -->
   <img src="public/images/logo.svg" alt="Portfolio Logo" width="120" height="120">
 
-### ✨ Student Developer | Chief Problem Solver | Solution Sorcerer
+### ✨ Full Stack Developer | Backend Engineer | Computer Vision Developer
 
 <kbd>My space on the web</kbd> showcasing modern web development with stunning dark aesthetics
 

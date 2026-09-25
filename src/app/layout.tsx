@@ -16,13 +16,13 @@ import {
 
 export const metadata: Metadata = {
   applicationName: "Sharmake Hassan Said",
-  title: "Sharmake Hassan Said | Full Stack Developer & Data Analyst",
+  title: "Sharmake Hassan Said | Full Stack Developer",
   description:
-    "Sharmake Hassan Said is a Full Stack Developer, AI & Machine Learning enthusiast, and Data Analyst based in Mogadishu, Somalia. Explore his projects in web development, AI systems, and data-driven digital products.",
+    "Portfolio of Sharmake Hassan Said, a Full Stack Developer based in Mogadishu, Somalia, building web applications, backend APIs, computer vision systems, and AI-enabled products.",
   authors: [
     {
       name: "Sharmake Hassan Said",
-      url: "https://sharmatheanalyst.vercel.app",
+      url: "https://sh-p-kappa.vercel.app",
     },
   ],
   creator: "Sharmake Hassan Said",
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   category: "Portfolio",
   classification: "Software Development",
   keywords: Keywords,
-  metadataBase: new URL("https://sharmatheanalyst.vercel.app"),
+  metadataBase: new URL("https://sh-p-kappa.vercel.app"),
 
 
   alternates: {
-    canonical: "https://sharmatheanalyst.vercel.app",
+    canonical: "https://sh-p-kappa.vercel.app",
     languages: {
-      "en-US": "https://sharmatheanalyst.vercel.app",
+      "en-US": "https://sh-p-kappa.vercel.app",
     },
   },
   robots: {
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     title: "Sharmake Hassan Said",
     description:
       "Explore Sharmake Hassan Said's portfolio featuring projects in React, Node.js, AI, Machine Learning, and Data Analytics. Discover innovative web applications and intelligent systems.",
-    url: "https://sharmatheanalyst.vercel.app",
+    url: "https://sh-p-kappa.vercel.app",
     siteName: "Sharmake Hassan Said",
     images: [
       {

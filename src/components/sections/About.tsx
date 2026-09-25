@@ -57,7 +57,7 @@ export const About = () => {
 
             {/* Profile image (small) */}
             <motion.div
-              className="relative w-full max-w-sm h-48 rounded-2xl overflow-hidden border border-primary/20"
+              className="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden border border-primary/20"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -85,7 +85,7 @@ export const About = () => {
                 </div>
                 <div>
                   <p className="text-[10px] text-muted-foreground uppercase tracking-wider">Education</p>
-                  <p className="text-sm font-semibold text-foreground">B.Tech in Computer Science & Engineering (Pursuing)</p>
+                  <p className="text-sm font-semibold text-foreground">B.Tech in Computer Science & Engineering · Completed August 2026</p>
                 </div>
               </div>
 

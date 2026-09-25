@@ -3,7 +3,7 @@ export const selfData = {
   first_name: "Sharmake",
   last_name: "Hassan",
   jobTitle: "Full Stack Developer",
-  workFor: "B.Tech in Computer Science & Engineering",
+  workFor: "Jamhuriya University of Science & Technology",
   current_location: {
     city: "Mogadishu",
     state: "Somalia",
@@ -18,26 +18,24 @@ export const selfData = {
   phone: "+252 611 688 269",
   roles: [
     "Full Stack Developer",
-    "AI & Machine Learning Enthusiast",
-    "Data Analyst",
-    "Digital Solutions Builder",
-    "System Designer",
-    "Problem Solver",
+    "MERN Stack Developer",
+    "Backend Developer",
+    "Computer Vision Developer",
   ],
-  desc: "Building modern web apps, AI systems, and data-driven digital products",
-  bio: "I am a Computer Science student, full stack developer, and data analyst based in Mogadishu. I build practical, scalable systems across web development, machine learning, analytics, and automation.",
+  desc: "Building web applications, backend systems, and AI-enabled products",
+  bio: "Results-driven Full Stack Developer with hands-on experience building scalable web applications, backend APIs, AI-powered platforms, and modern dashboard systems.",
   about: [
-    "I am a B.Tech Computer Science and Engineering student with a strong passion for building modern, impactful, and intelligent software systems.",
-    "As a Full Stack Developer, AI and Machine Learning enthusiast, and Data Analyst, I enjoy turning ideas into real products that solve real-world problems. I have hands-on experience in web development, data analytics, machine learning, automation, and system design.",
+    "I am a B.Tech Computer Science and Engineering graduate based in Mogadishu, Somalia.",
+    "I build practical systems across backend engineering, secure REST APIs, role-based dashboards, computer vision, and machine-learning applications.",
   ],
   aboutSkills: [
     "Full Stack Web Developer",
     "AI & Machine Learning Enthusiast",
-    "Data Analyst (Python, R, SQL, Excel)",
+    "Computer Vision & Machine Learning",
   ],
   aboutFocus: [
-    "Builder of Healthcare, Civic Tech, E-commerce & Business Systems",
-    "Focused on Usability, Security, Scalability & Real Impact",
+    "Builder of healthcare, civic technology, logistics, and business systems",
+    "Focused on secure workflows, API architecture, and real-world usability",
   ],
 
   socials_username: {
@@ -49,6 +47,6 @@ export const selfData = {
     facebook: "",
     instagram: "",
     snapchat: "",
-    portfolio: "sharmatheanalyst.vercel.app",
+    portfolio: "sh-p-kappa.vercel.app",
   },
 };

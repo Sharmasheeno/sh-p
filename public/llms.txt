@@ -1,22 +1,21 @@
-# Aarab Nishchal - Student Developer Portfolio
+# Sharmake Hassan Said - Full Stack Developer Portfolio
 
 ## About
-Aarab Nishchal is a Student Developer and Creative Coder based in Bhubaneswar, India. He specializes in Full-Stack Web Development, primarily using the React and Next.js ecosystem.
+Sharmake Hassan Said is a Full Stack Developer based in Mogadishu, Somalia. He specializes in web applications, backend engineering, computer vision, and AI-enabled products.
 
 ## Skills
-- **Languages**: JavaScript, TypeScript, Python, Java, C/C++, SQL
+- **Languages**: JavaScript, TypeScript, Python, SQL
 - **Frameworks**: Next.js, React, Express.js, Tailwind CSS
-- **Tools**: Git, GitHub, Vercel, Firebase, MongoDB
+- **Tools**: Git, GitHub, Postman, Vercel, Firebase, MongoDB
 
 ## Projects
 - **Portfolio**: This website, showcasing his work and skills.
-- **Various Open Source Experiments**: Available on GitHub.
+- **Selected systems**: Healthcare, civic technology, logistics, cybersecurity, and machine learning projects.
 
 ## Contact
-- **Email**: aarab.nishchal@gmail.com
-- **GitHub**: https://github.com/aarabii
-- **LinkedIn**: https://linkedin.com/in/aarab-nishchal
-- **Twitter**: https://twitter.com/aarab_ii
+- **Email**: sharmacadenuur2017@gmail.com
+- **GitHub**: https://github.com/Sharmasheeno
+- **LinkedIn**: https://linkedin.com/in/sharmake-hassan-said-8949542b3
 
 ## Content Structure
 - `/`: Main landing page with Hero, About, Skills, Experience, Projects, and Contact sections.

@@ -20,10 +20,10 @@ export const Hero = () => {
   const ref = useRef(null);
 
   const stats = [
-    { value: "20+", label: "Projects", sublabel: "Completed" },
-    { value: "25+", label: "Technologies", sublabel: "Worked With" },
-    { value: "15+", label: "Happy Clients", sublabel: "Worldwide" },
-    { value: "100%", label: "Commitment", sublabel: "Quality Work" },
+    { value: "7", label: "Projects", sublabel: "Selected" },
+    { value: "3", label: "Roles", sublabel: "Documented" },
+    { value: "7", label: "Domains", sublabel: "Across projects" },
+    { value: "<1s", label: "Alert delivery", sublabel: "PPE testing" },
   ];
 
   const infoCards = [
@@ -35,7 +35,7 @@ export const Hero = () => {
     {
       icon: <HiOutlineAcademicCap className="w-4 h-4" />,
       label: "Education",
-      value: "B.Tech in CSE (Pursuing)",
+      value: "B.Tech in CSE · Completed August 2026",
     },
     {
       icon: <HiOutlineCode className="w-4 h-4" />,
@@ -262,9 +262,9 @@ export const Hero = () => {
               <div className="flex items-center justify-center gap-2 mb-1">
                 <span className="text-primary text-lg">
                   {stat.label === "Projects" && "⟨/⟩"}
-                  {stat.label === "Technologies" && "🚀"}
-                  {stat.label === "Happy Clients" && "👤"}
-                  {stat.label === "Commitment" && "📊"}
+                  {stat.label === "Roles" && "✦"}
+                  {stat.label === "Domains" && "◈"}
+                  {stat.label === "Alert delivery" && "⚡"}
                 </span>
               </div>
               <p className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</p>

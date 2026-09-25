@@ -45,16 +45,13 @@ const skills = [
 ];
 
 const projects = [
+  "Intelligent Real-Time PPE Monitoring & Alert System",
+  "SomWay Travel & Logistics",
+  "Curdun Cargo Management System",
   "Pediatric Health Hub",
-  "JUGFIK AI Project Management",
   "CyberSentinel Malware Detection",
-  "Bookish Bliss",
   "SOM Election Platform",
   "SleepMetrics",
-  "TaskFlow AI",
-  "Smart Recipe Generator",
-  "Restaurant Management System",
-  "Hospital Readmission Prediction",
 ];
 
 const locations = [

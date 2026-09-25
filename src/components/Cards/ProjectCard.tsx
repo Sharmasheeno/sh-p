@@ -11,7 +11,7 @@ interface ProjectCardProps {
   index: number;
   title: string;
   desc: string;
-  github: string;
+  github?: string;
   demo?: string;
   tech: string[];
   category?: string;
@@ -138,22 +138,24 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 
           {/* Action Buttons */}
           <div className="flex gap-2 mt-auto">
-            <Button
-              variant="outline"
-              size="sm"
-              className="flex-1 text-[10px] h-7 transition-all duration-300 font-mono"
-              style={{
-                backgroundColor: "hsl(var(--glass-bg-light))",
-                borderColor: "hsl(var(--glass-border))",
-                color: "hsl(var(--foreground))",
-              }}
-              asChild
-            >
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="w-3 h-3 mr-1" />
-                Code
-              </a>
-            </Button>
+            {github && (
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex-1 text-[10px] h-7 transition-all duration-300 font-mono"
+                style={{
+                  backgroundColor: "hsl(var(--glass-bg-light))",
+                  borderColor: "hsl(var(--glass-border))",
+                  color: "hsl(var(--foreground))",
+                }}
+                asChild
+              >
+                <a href={github} target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="w-3 h-3 mr-1" />
+                  Code
+                </a>
+              </Button>
+            )}
             {demo && (
               <Button
                 size="sm"

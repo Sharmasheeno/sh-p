@@ -69,7 +69,7 @@ export function EmailTemplate({
                 />
               </Column>
               <Column>
-                <Text style={brandText}>Aarab Nishchal</Text>
+                <Text style={brandText}>Sharmake Hassan Said</Text>
               </Column>
             </Row>
           </Section>
