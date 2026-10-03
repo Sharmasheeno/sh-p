@@ -1,4 +1,47 @@
 import { selfData, skillsData } from "@/constant";
+import { Certificate, certificatesData } from "@/constant/certificates";
+
+const SITE_URL = "https://sh-p-kappa.vercel.app";
+
+const credentialCategoryMap: Record<Certificate["category"], string> = {
+  "Professional Certificate": "Professional Certificate",
+  Specialization: "Certificate",
+  "Course Certificate": "Certificate",
+  "Academic Achievement": "Award",
+  "Community Achievement": "Award",
+};
+
+function toCredentialStructuredData(certificate: Certificate) {
+  return {
+    "@type": "EducationalOccupationalCredential",
+    name: certificate.title,
+    credentialCategory: credentialCategoryMap[certificate.category],
+    ...(certificate.description && { description: certificate.description }),
+    ...(certificate.date && { dateCreated: certificate.date }),
+    image: `${SITE_URL}${certificate.image}`,
+    ...(certificate.verifyUrl && { url: certificate.verifyUrl }),
+    recognizedBy: {
+      "@type": "Organization",
+      name: certificate.issuer,
+    },
+    ...(certificate.skills && { competencyRequired: certificate.skills }),
+  };
+}
+
+export function generateCertificatesStructuredData() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${selfData.name} — Certificates & Achievements`,
+    url: `${SITE_URL}/certificates`,
+    numberOfItems: certificatesData.length,
+    itemListElement: certificatesData.map((certificate, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: toCredentialStructuredData(certificate),
+    })),
+  };
+}
 
 export function generatePersonStructuredData() {
   const skills = skillsData.flatMap((category) =>
@@ -35,6 +78,7 @@ export function generatePersonStructuredData() {
     url: "https://sh-p-kappa.vercel.app",
     description: selfData.bio,
     knowsAbout: skills,
+    hasCredential: certificatesData.map(toCredentialStructuredData),
   };
 }
 

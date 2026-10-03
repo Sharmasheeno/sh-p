@@ -74,6 +74,17 @@ const longTail = [
   "Freelance Web Developer Mogadishu",
 ];
 
+const certifications = [
+  "Sharmake Hassan Said certifications",
+  "Google IT Support Professional Certificate",
+  "Google Data Analytics Professional Certificate",
+  "DevOps Kubernetes Docker certification",
+  "Duke University Cloud Computing Specialization",
+  "Python for Data Science",
+  "Cybersecurity",
+  "Academic Performance Award Jamhuriya University",
+];
+
 export const Keywords = [
   ...names,
   ...roles,
@@ -81,6 +92,7 @@ export const Keywords = [
   ...projects,
   ...locations,
   ...longTail,
+  ...certifications,
 
   ...roles.flatMap((role) => locations.map((loc) => `${role} in ${loc}`)),
   ...skills.map((skill) => `${skill} Developer`),

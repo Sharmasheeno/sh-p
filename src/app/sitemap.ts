@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { id: "#skills", priority: 0.8 },
     { id: "#experience", priority: 0.8 },
     { id: "#projects", priority: 0.9 },
+    { id: "#certificates", priority: 0.8 },
     { id: "#contact", priority: 0.8 },
   ];
 
@@ -22,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...mainPageEntries,
+    {
+      url: `${baseUrl}/certificates`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/resume`,
       lastModified,

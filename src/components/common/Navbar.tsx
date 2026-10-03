@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import { RiMenu4Fill, RiCloseLargeFill } from "react-icons/ri";
 import { FiDownload } from "react-icons/fi";
@@ -17,6 +17,7 @@ const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Certificates", href: "#certificates" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -27,7 +28,19 @@ export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("Home");
   const lastScrollY = useRef(0);
   const pathname = usePathname();
+  const router = useRouter();
   const isResumePage = pathname === "/resume";
+
+  // Deep links (e.g. /#certificates) — the homepage renders sections after the
+  // preloader, so the browser's native hash jump misses them. Scroll once mounted.
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(decodeURIComponent(id))?.scrollIntoView({ behavior: "smooth" });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +62,7 @@ export const Navbar = () => {
       }
 
       // Determine active section
-      const sections = ["contact", "experience", "projects", "skills", "about"];
+      const sections = ["contact", "certificates", "projects", "experience", "skills", "about"];
       let found = false;
       for (const id of sections) {
         const el = document.getElementById(id);
@@ -77,7 +90,14 @@ export const Navbar = () => {
       const el = document.getElementById(href.substring(1));
       if (el) {
         el.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Section lives on the homepage (e.g. clicked from /certificates or /resume).
+        router.push(`/${href}`);
       }
+    } else if (pathname !== href) {
+      router.push(href);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 

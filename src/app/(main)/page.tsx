@@ -9,6 +9,7 @@ import {
   Skills,
   Experience,
   Projects,
+  Certificates,
   Contact,
 } from "@/components/sections";
 import { PreLoader, Background } from "@/components/common";
@@ -32,6 +33,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Certificates showPageLink />
         <Contact />
         <Footer />
 
